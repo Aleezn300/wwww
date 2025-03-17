@@ -1,0 +1,58 @@
+/* Botão de Acessibilidade */
+#botao-acessibilidade {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* Opções de Acessibilidade */
+  #opcoes-acessibilidade {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    display: none;  /* Escondido por padrão */
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #opcoes-acessibilidade.apresenta-lista {
+    display: flex;  /* Exibido quando ativado */
+  }
+  
+  button {
+    background-color: #008CBA;
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #006f8f;
+  }
+  
+  /* Alternância de Contraste */
+  body.alto-contraste {
+    background-color: black;
+    color: white;
+  }
+  
+  body {
+    font-size: 1rem;
+    transition: font-size 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  }
+  
